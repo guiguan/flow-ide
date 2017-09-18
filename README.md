@@ -1,51 +1,13 @@
-Flow-IDE
-=======
+This is a **temp solution** to make flowtype([ide-flowtype](https://github.com/flowtype/ide-flowtype)) of Atom IDE supports flow coverage report. It is based on `steelbrain`'s
+Atom package [ide-flow](https://github.com/steelbrain/flow-ide).
 
-Flow IDE is a lightweight package that provides IDE features for [FlowType][FlowType] for [Atom Editor][Atom]. It's pretty lightweight and robust.
+To enable it:
+1. Install `ide-flowtype-coverage` via `apm` or Atom preferences
+2. Specify `flow` path in `Executable Path`
 
-#### Installation
-```
-apm install flow-ide
-```
+The update of the coverage in status bar is triggered when saving a file. The coverage report will
+be shown in Atom IDE's Diagnostics. To temporarily disable coverage, click on status bar
+`Flow Coverage: ?%`, and save the file. To re-enable it, click on status bar
+`Flow Coverage: ?%`, and save the file.
 
-#### Features
-
- - Linting
- - Autocomplete
- - Jump to declaration (using [facebooknuclide/hyperclick][hyperclick])
-
-#### Roadmap
-
- - Show types on mouseover
-
-#### Differences to other packages
-
-Differences to [facebook/nuclide][nuclide]
- - Nuclide is nice and all but it's mostly bloatware for lightweight flow programming
-
-Differences to [AtomLinter/linter-flow][linter-flow]
- - It tries to manage flow servers by itself, I find it annoying
-
-Differences to [nmn/autocomplete-flow][autocomplete-flow]
- - Never worked for me
-
-Differences to [LukeHoban/ide-flow][ide-flow]
- - Outdated and buggy
- - No longer maintained
-
-#### Screenshots
-
-![Autocomplete](https://cloud.githubusercontent.com/assets/4278113/12857027/bb8e2c80-cc69-11e5-918d-4451d0679e66.png)
-
-
-#### License
-
-This project is licensed under the terms of MIT License. Check the LICENSE file for more info.
-
-[FlowType]:http://flowtype.org/
-[Atom]:https://atom.io/
-[nuclide]:https://github.com/facebook/nuclide
-[hyperclick]:https://github.com/facebooknuclide/hyperclick
-[ide-flow]:https://github.com/lukehoban/atom-ide-flow
-[linter-flow]:https://github.com/AtomLinter/linter-flow
-[autocomplete-flow]:https://github.com/nmn/autocomplete-flow
+Enjoy!
